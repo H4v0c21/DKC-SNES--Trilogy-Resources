@@ -51,4 +51,4 @@
 56,x	word	number in level's sprite list
 58,x	word	spawn parameter (set in level's sprite list)
 5A,x	word	offscreen despawn timer
-5C,x	word	unused?
+5C,x	word	hud despawn timer/snapjaw chase related?

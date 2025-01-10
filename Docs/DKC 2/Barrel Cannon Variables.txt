@@ -1,0 +1,40 @@
+
+$26,x	what animal to transform into (if bit 7 of $46,x is set)
+
+$2A,x
+$2C,x
+
+$38,x	time before next rotation step?
+$3A,x	rotation speed (how many units to add to $48,x)
+$3C,x	icon sprite pointer
+$3E,x
+
+$42,x	rotation min (0x1000 = 1/16th of a rotation)
+$43,x	rotation max (0x1000 = 1/16th of a rotation)
+$44,x	time before rotatable timer barrel auto fires? (subtracted by 3 every frame)
+$46,x	
+$48,x	rotation (increases until it overflows meaning the barrel fully rotated to is start position)
+$4A,x
+$4C,x	
+
+$50,x	time between rotation steps?
+
+
+$46,x:
+0001	00	No diddy
+0002	01	No dixie
+0004	02	Auto fire
+
+s	squitter
+b	bonus
+?	auto?
+r	rotation direction
+R	stop after rotate
+<	when both enabled moves left and right
+>	when both enabled moves left and right
+a	auto fire
+e	exclusive kong entry
+d	no dixie
+D	no diddy
+
+s?br R000 <>00 0adD

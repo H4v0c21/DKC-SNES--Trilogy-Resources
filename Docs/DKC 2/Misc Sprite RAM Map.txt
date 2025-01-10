@@ -10,7 +10,7 @@ $17B2	terrain collision routine pointer
 
 $19A2	last web shot time
 $19A4	last web platform shot time
-$19A6	number of web shots that current exist
+$19A6	number of web shots that currently exist
 
 $19BA	number of enemies to defeat for destroy them all bonus (decrements when killing an enemy)
 

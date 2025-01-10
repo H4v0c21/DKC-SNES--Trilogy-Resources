@@ -1,0 +1,28 @@
+Level Settings Data Format:
+
+Offset	Size	Description
+$00	1 byte	level type
+$01	1 byte	bonus type (if level type is bonus)
+$02	2 bytes	pointer to level style config
+$04	1 byte	map number (which section of the levels tile map should be used)
+$05	1 byte	unknown parameter
+$06	1 byte	unknown parameter
+$07	1 byte	unknown parameter
+$08	1 byte	something to do with camera positioning
+$09	1 byte	something to do with camera positioning
+$0A	1 byte	camera control
+
+Everything after the above header is variable length so offsets will vary.
+
+Level Entrance Data:
+1 byte	2 bytes	2 bytes
+state	x pos	y pos
+Terminated with FF
+
+Level Destination Data:
+A list of 16 bit level numbers, used to define where level exits will take the player.
+Terminated with FFFF 0000
+
+Map Node Unlocks:
+A list of level number pairs, each pair is composed of two 16 bit level numbers, used for telling the game that the path between these two level numbers should be unlocked.
+Terminated with FFFF

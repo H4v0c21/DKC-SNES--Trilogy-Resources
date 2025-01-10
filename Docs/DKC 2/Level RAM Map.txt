@@ -1,0 +1,32 @@
+$515	$553	$00,x	$00,setting	level type
+$517	$555	$02,x	$00,style	graphics init routine index
+$519	$557	$04,x	$02,style	HDMA init routine index
+$51B	$559	$06,x	$04,style	music track index
+$51D	$55B	$08,x	$0A,style	level init routine pointer (bank BB)
+$51F	$55D	$0A,x	$08,style	terrain slope init routine pointer (bank BB)
+$521	$55F	$0C,x	$07,setting	start level with animal?
+$523	$561	$0E,x	$12,style	32x32 tilemap index
+$525	$563	$10,x		level map number
+$527	$565	$12,x	$0E,style	level nmi routine index
+$529	$567	$14,x	$10,style	level logic routine index
+$52B	$569	$16,x	$13,style	level effect flags
+$52D	$56B	$18,x		bonus type?
+$52F	$56D	$1A,x		world map connecting methods?
+$531	$56F	$1C,x		entrances address
+$533	$571	$1E,x		entrance x position
+$535	$573	$20,x		entrance y position
+$537	$575	$22,x	$0C,style	ppu setting script index
+$539	$577	$24,x	$0D,style	vram upload script index
+$53B	$579	$26,x		destination count
+$53D	$57B	$28,x		level destination 1
+$53F	$57D	$2A,x		level destination 2
+$541	$57F	$2C,x		level destination 3
+$543	$581	$2E,x		level destination 4
+$545	$583	$30,x		level destination 5
+$547	$585	$32,x		level destination 6
+$549	$587	$34,x		level destination 7
+$54B	$589	$36,x		level destination 8
+$54D	$58B	$38,x	$08,setting	camera positioning?
+$54F	$58D	$3A,x	$0A,setting	camera control
+$550	$58E	$3B,x	$0B,setting	entrance first byte?
+$551	$58F	$3C,x		world map connecting methods address

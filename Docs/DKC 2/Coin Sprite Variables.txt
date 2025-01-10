@@ -1,0 +1,12 @@
+$42,x	number of coins
+$44,x	coin count current x position
+$45,x	coin count current y position
+$46,x	coin display number
+$48,x	coin count x position
+$49,x	coin count y position
+$4A,x	coin collected x position	
+$4B,x
+$4C,x	address of coin count
+$4E,x	collection sound effect
+
+$5C,x	display time
